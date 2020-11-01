@@ -1,0 +1,19 @@
+#Codes for handling duplicate values in a dataset for a variable in Python using pandas
+
+#Loading pandas library
+import pandas as pd
+
+#Loading the dataset
+df = pd.read_csv('file.csv')
+
+#Finding duplicates
+duplicate = df[df.duplicated()]
+duplicate
+
+#sorting by first column
+#assuming the first column name is Column 1
+df.sort_values("Column1", inplace = True)  
+
+#deleing duplicate values by keeping the second values
+data = (df.drop_duplicates(['Column1'], keep ='last'))
+data
