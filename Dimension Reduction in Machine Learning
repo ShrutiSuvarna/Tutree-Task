@@ -1,0 +1,22 @@
+The number of input variables or features for a dataset is referred to as its dimensionality.
+Dimensionality reduction refers to techniques that reduce the number of input variables in a dataset.
+
+Benefits for applying dimensionality reduction to a dataset:
+Space required to store the data is reduced as the number of dimensions comes down
+Less dimensions lead to less computation/training time
+Some algorithms do not perform well when we have a large dimensions. So reducing these dimensions needs to happen for the algorithm to be useful. 
+It takes care of multicollinearity by removing redundant features. 
+It helps in visualizing data.
+
+Dimensionality reduction can be done in two different ways:
+By only keeping the most relevant variables from the original dataset (this technique is called feature selection)
+By finding a smaller set of new variables, each being a combination of the input variables, containing basically the same information as the input variables. This technique is called dimensionality reduction. 
+
+Techniques used for dimensionality reduction:
+1. Missing Values Ratio
+2. Low Variance Filter
+3. High Correlation Filter
+4. Random Forest
+5. Principal Component Analysis
+6. Backward Feature Elimination
+7. Forward Feature Construction
